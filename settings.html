@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="./index.css">
+<script type="text/javascript" src="tweet.js"></script>
+<script type="text/javascript" src="settings.js"></script>
+<script>
+</script>
+<body style="background-color: #dd6e6e">
+    <div class="menu">
+        <h1 class="strokeme">Firebird</h1>
+    </div>
+    <div style="text-align: center">
+        <form onsubmit='saveFile();' id='accountInfo'>
+            <label class="field a-field a-field_a1 page__field">
+                <input class="field__input" placeholder="NAME" name='NAME' required>
+                    <span class="field__label-wrap">
+                    <span class="field__label">NAME</span>
+                </span>
+            </label><br>
+            <label class="field a-field a-field_a1 page__field">
+                <input class="field__input" placeholder="APIKEY" name='AK' required>
+                    <span class="field__label-wrap">
+                    <span class="field__label">API KEY</span>
+                </span>
+            </label>
+            <label class="field a-field a-field_a1 page__field">
+                <input class="field__input" placeholder="API SECRET KEY" name='ASK' onclick='remember();' required>
+                    <span class="field__label-wrap">
+                    <span class="field__label">API SECRET KEY</span>
+                </span>
+            </label><br>
+            <label class="field a-field a-field_a1 page__field">
+                <input class="field__input" placeholder="ACCESS TOKEN" name='AT' required>
+                    <span class="field__label-wrap">
+                    <span class="field__label">ACCESS TOKEN</span>
+                </span>
+            </label>
+            <label class="field a-field a-field_a1 page__field">
+                <input class="field__input" placeholder="ACCESS TOKEN SECRET" name='ATS' required>
+                    <span class="field__label-wrap">
+                    <span class="field__label">ACCESS TOKEN SECRET</span>
+                </span>
+            </label><br>
+            <input type="submit" class='btn btn-danger'/>
+        </form>
+        <a href="existingbot.html"><button style="border-radius: 25px; margin-top: 1%" class="btn bg-light">Run A Bot</button></a><br>
+        <a href="index.html"><button style="border-radius: 25px; margin-top: 1%" class="btn bg-light"><i class="fa fa-home"></i></button></a>
+    </div>
+</body>
+</html>

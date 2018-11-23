@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="./index.css">
+<script type="text/javascript" src="tweet.js"></script>
+<script type="text/javascript" src="runbot.js"></script>
+<body style="background-color: #dd6e6e">
+    <div class="menu">
+        <h1 class="strokeme">Firebird</h1>
+    </div>
+    <center>
+        <button id="respond" onclick="runBot('1');" class="btn btn-danger">Tweet Users Back<br><img src="whitetweeter.png" width="25" height="25"/></button>
+        <button id="hashflow" onclick="runBot('2');" class="btn btn-danger">Tweet Users on Hashtag<br><img src="whitetweeter.png" width="25" height="25"/></button>
+        <button id="followers" onclick="runBot('3');" class="btn btn-danger">Tweet New Followers<br><img src="whitetweeter.png" width="25" height="25"/></button><br>
+        <div id="hash" style="display: none">
+            <input type="text" placeholder="Hashtag" id="hashtag" style="border-radius: 25px; border: transparent; height: 10%; width: 10%; font-size: 10px; margin-top: 1%;"/><br>
+            <button id="run" onclick="getHash();" style="margin-top: 1%" class="btn btn-danger">Run!</button>
+        </div>
+        <div id="current" style="display: none; margin-top: 1%;">
+            <div class="jumbotron jumbotron-fluid" style="width: 60%; height: 10%; border-radius: 25px; padding: 5px; margin-bottom: 0.2%; background-color: white;">
+                <div class="container">
+                    <h1 id="insert" style="color: black; font-size: 24px;" class="display-4">User</h1>
+                    <p id="insert2" style="color: black; font-size: 12px;" class="lead">Comment</p>
+                </div>
+            </div>
+        </div>
+        <a href="index.html"><button style="border-radius: 25px; margin-top: 1%" class="btn bg-light"><i class="fa fa-home"></i></button></a><br style="line-height: 10%;">
+        <img src="tweeter.png" width="75px" height="75px"/>
+    </center>
+</body>
+</html>

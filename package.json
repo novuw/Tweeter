@@ -1,0 +1,20 @@
+{
+  "name": "tweeter",
+  "version": "1.0.0",
+  "description": "Tweeting app for small businesses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Elijah Harbut",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "electron": "^3.0.9",
+    "font-awesome": "^4.7.0",
+    "nedb": "^1.8.0",
+    "twit": "^2.2.11",
+    "wait-for-stuff": "^1.4.0"
+  }
+}
